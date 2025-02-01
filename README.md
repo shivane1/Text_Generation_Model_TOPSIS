@@ -1,4 +1,3 @@
-readme_content = """
 # TOPSIS Method for Selecting the Best Pretrained Model for Text Generation
 
 ## Overview
@@ -56,7 +55,7 @@ Using the **TOPSIS method**, we effectively ranked pretrained models for text ge
 """
 
 # Save README file
-with open("README.md", "w", encoding="utf-8") as f:
+with open("SHIVANE_KAPOOR_102203191_README.md", "w", encoding="utf-8") as f:
     f.write(readme_content)
 
-print("README.md file has been generated successfully!")
+print("SHIVANE_KAPOOR_102203191_README.md file has been generated successfully!")
