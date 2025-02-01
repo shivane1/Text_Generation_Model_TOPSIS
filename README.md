@@ -40,11 +40,11 @@ The implementation is provided in the Jupyter Notebook: `Modified_TOPSIS_Text_Ge
 
 ## 4. Results
 ### Final Rankings:
-![Ranking Screenshot]![image](https://github.com/user-attachments/assets/896d251c-47eb-4ceb-867c-5a81c8ccec67)
+[image](https://github.com/user-attachments/assets/896d251c-47eb-4ceb-867c-5a81c8ccec67)
 
 
 ### TOPSIS Output:
-![TOPSIS Output]![image](https://github.com/user-attachments/assets/1698dbaf-8c50-4273-a20b-9c55ef9aa08a)
+[image](https://github.com/user-attachments/assets/1698dbaf-8c50-4273-a20b-9c55ef9aa08a)
 
 
 ## 5. Usage
