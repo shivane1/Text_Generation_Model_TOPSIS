@@ -54,7 +54,6 @@ The implementation is provided in the Jupyter Notebook: `Modified_TOPSIS_Text_Ge
 
 ## 6. Conclusion
 Using the **TOPSIS method**, we effectively ranked pretrained models for text generation based on multiple criteria, providing a systematic approach for model selection.
-"""
 
 # Save README file
 with open("SHIVANE_KAPOOR_102203191_README.md", "w", encoding="utf-8") as f:
