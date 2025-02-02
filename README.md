@@ -5,26 +5,26 @@ This project implements the **TOPSIS (Technique for Order of Preference by Simil
 
 ## 1. Models and Evaluation Criteria
 The following pretrained models are evaluated:
-- **GPT-3**
-- **GPT-2**
-- **BERT**
-- **T5**
-- **BART**
+- **LLaMA**
+- **Falcon**
+- **Mistral**
+- **Gemini**
+- **Claude**
 
 The criteria for evaluation include:
-- **Perplexity** (Lower is better)
-- **BLEU Score** (Higher is better)
-- **Inference Time** (Lower is better)
-- **Model Size** (Lower is better)
+- **ROUGE Score** (Higher is better)
+- **METEOR Score** (Higher is better)
+- **Inference Time (seconds)** (Lower is better)
+- **Memory Usage (GB)** (Lower is better)
 
 ### Decision Matrix
-| Model   | Perplexity | BLEU Score | Inference Time (s) | Model Size (MB) |
-|---------|------------|------------|--------------------|-----------------|
-| GPT-3   | 20         | 40         | 2.0                | 3500            |
-| GPT-2   | 30         | 35         | 1.5                | 1500            |
-| BERT    | 25         | 30         | 0.8                | 1200            |
-| T5      | 22         | 33         | 1.2                | 1100            |
-| BART    | 28         | 37         | 1.0                | 1600            |
+| Model   | ROUGE Score | METEOR Score | Inference Time (s) | Memory Usage (GB) |
+|---------|------------|-------------|--------------------|-----------------|
+| LLaMA   | 55         | 0.45        | 1.8                | 10.0            |
+| Falcon  | 50         | 0.42        | 1.4                | 8.0             |
+| Mistral | 48         | 0.39        | 0.9                | 7.0             |
+| Gemini  | 52         | 0.44        | 1.3                | 9.0             |
+| Claude  | 49         | 0.41        | 1.1                | 8.5             |
 
 ## 2. Implementation Steps
 The **TOPSIS method** is applied using the following steps:
@@ -40,12 +40,16 @@ The implementation is provided in the Jupyter Notebook: `Modified_TOPSIS_Text_Ge
 
 ## 4. Results
 ### Final Rankings:
-![image](https://github.com/user-attachments/assets/896d251c-47eb-4ceb-867c-5a81c8ccec67)
-
+| Rank | Model  | TOPSIS Score |
+|------|--------|--------------|
+| 1    | Gemini | 0.5577       |
+| 2    | Mistral| 0.5145       |
+| 3    | LLaMA  | 0.4855       |
+| 4    | Falcon | 0.4808       |
+| 5    | Claude | 0.4583       |
 
 ### TOPSIS Output:
-![image](https://github.com/user-attachments/assets/1698dbaf-8c50-4273-a20b-9c55ef9aa08a)
-
+A bar chart is generated to visualize the rankings.
 
 ## 5. Usage
 1. Clone this repository.
@@ -55,8 +59,12 @@ The implementation is provided in the Jupyter Notebook: `Modified_TOPSIS_Text_Ge
 ## 6. Conclusion
 Using the **TOPSIS method**, we effectively ranked pretrained models for text generation based on multiple criteria, providing a systematic approach for model selection.
 
-# Save README file
-with open("SHIVANE_KAPOOR_102203191_README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
 
-print("SHIVANE_KAPOOR_102203191_README.md file has been generated successfully!")
+
+## Results
+### Final Rankings:
+![image](https://github.com/user-attachments/assets/896d251c-47eb-4ceb-867c-5a81c8ccec67)
+
+
+### TOPSIS Output:
+![image](https://github.com/user-attachments/assets/1698dbaf-8c50-4273-a20b-9c55ef9aa08a)
